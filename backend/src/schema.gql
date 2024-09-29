@@ -1,0 +1,27 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Price {
+  id: Int!
+  date: String
+  close: Float
+  volume: Float
+  securityCompany: SecurityCompany
+}
+
+type SecurityCompany {
+  id: Int!
+  ticker: String!
+  securityName: String!
+  sector: String!
+  country: String!
+  trend: Float!
+  prices: [Price!]
+  trendColor: String!
+}
+
+type Query {
+  securities: [SecurityCompany!]!
+  security(id: Int!): SecurityCompany!
+}
