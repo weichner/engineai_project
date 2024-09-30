@@ -1,61 +1,53 @@
 {
-	"info": {
-		"_postman_id": "4b653b52-aca6-4205-ab10-8363a5b66adb",
-		"name": "engineai",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "6621620"
-	},
-	"item": [
-		{
-			"name": "Find All",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "graphql",
-					"graphql": {
-						"query": "query {\n  securities {\n    id\n    ticker\n    securityName\n    sector\n    country\n    trend\n    trendColor\n    prices {\n      date\n      close\n      volume\n    }\n  }\n}",
-						"variables": ""
-					}
-				},
-				"url": {
-					"raw": "http://localhost:3000/graphql",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "3000",
-					"path": [
-						"graphql"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Find One",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "graphql",
-					"graphql": {
-						"query": "query {\n  security(id: 1) {\n    id\n    ticker\n    securityName\n    sector\n    country\n    trend\n    trendColor\n    prices {\n      date\n      close\n      volume\n    }\n  }\n}",
-						"variables": ""
-					}
-				},
-				"url": {
-					"raw": "localhost:3001/graphql",
-					"host": [
-						"localhost"
-					],
-					"port": "3001",
-					"path": [
-						"graphql"
-					]
-				}
-			},
-			"response": []
-		}
-	]
+  "info": {
+    "_postman_id": "4b653b52-aca6-4205-ab10-8363a5b66adb",
+    "name": "engineai",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "6621620"
+  },
+  "item": [
+    {
+      "name": "Find All",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "graphql",
+          "graphql": {
+            "query": "query {\n  securities {\n    id\n    ticker\n    securityName\n    sector\n    country\n    trend\n    trendColor\n    prices {\n      date\n      close\n      volume\n    }\n  }\n}",
+            "variables": ""
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3001/graphql",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3001",
+          "path": ["graphql"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Find One",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "graphql",
+          "graphql": {
+            "query": "query {\n  security(id: 1) {\n    id\n    ticker\n    securityName\n    sector\n    country\n    trend\n    trendColor\n    prices {\n      date\n      close\n      volume\n    }\n  }\n}",
+            "variables": ""
+          }
+        },
+        "url": {
+          "raw": "localhost:3001/graphql",
+          "host": ["localhost"],
+          "port": "3001",
+          "path": ["graphql"]
+        }
+      },
+      "response": []
+    }
+  ]
 }
