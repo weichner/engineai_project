@@ -2,7 +2,7 @@
 
 ## Overview
 
-This front-end application is built using React and Material-UI. It provides a responsive and modern user interface for interacting with the backend services. The application is designed to be scalable, maintainable, and easy to use.
+This front-end application is built using React and Material-UI. It provides a responsive and modern user interface for interacting with the backend services. The application is designed to be scalable and maintainable.
 
 ## Features
 

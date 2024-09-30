@@ -2,7 +2,7 @@
 
 ## Overview
 
-This repository contains the source code for a full-stack application, divided into two main directories:
+This repository contains the source code for the EngineAI full-stack application, divided into two main directories:
 
 - [`backend`](command:_github.copilot.openRelativePath?%5B%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2FUsers%2Fwernereichner%2FDesktop%2FtestFullStack%2FengineAiProject%2Fengine-ai-backend%2Fbackend%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%2C%22fb3e0360-f4d1-4112-8e6e-e3ca5c461c00%22%5D '/Users/wernereichner/Desktop/testFullStack/engineAiProject/engine-ai-backend/backend'): Contains the server-side code.
 - [`frontend`](command:_github.copilot.openRelativePath?%5B%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2FUsers%2Fwernereichner%2FDesktop%2FtestFullStack%2FengineAiProject%2Fengine-ai-backend%2Ffrontend%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%2C%22fb3e0360-f4d1-4112-8e6e-e3ca5c461c00%22%5D '/Users/wernereichner/Desktop/testFullStack/engineAiProject/engine-ai-backend/frontend'): Contains the client-side code.

@@ -1,4 +1,4 @@
-# Security Company Management Application
+# EngineAI Security Company Management Application
 
 ## Introduction
 
