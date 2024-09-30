@@ -9,7 +9,7 @@ const run = async () => {
     console.log('Database cleared successfully!');
   } catch (error) {
     console.error('Error during clearing database:', error);
-    await dataSource.destroy(); // Asegura que la conexión se cierra en caso de error
+    await dataSource.destroy();
   }
 };
 

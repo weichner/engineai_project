@@ -3,7 +3,7 @@ import { Price } from './price.entity';
 import { Field, Int, ObjectType } from '@nestjs/graphql';
 
 @ObjectType()
-@Entity('security_companies')
+@Entity()
 export class SecurityCompany {
   @Field(() => Int)
   @PrimaryGeneratedColumn()

@@ -19,7 +19,7 @@ export class PostgresConfigService implements TypeOrmOptionsFactory {
       entities: [SecurityCompany, Price],
       synchronize: true,
       ssl: {
-        rejectUnauthorized: false, // Cambia esto según tus necesidades de seguridad
+        rejectUnauthorized: false,
       },
     };
   }

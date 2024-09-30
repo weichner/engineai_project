@@ -7,7 +7,6 @@ const seedDatabase = async (dataSource: DataSource) => {
   const companyRepository = dataSource.getRepository(SecurityCompany);
   const priceRepository = dataSource.getRepository(Price);
 
-  // Iterar sobre las empresas en el JSON
   for (const companyData of seedData) {
     const securityCompany = new SecurityCompany();
     securityCompany.ticker = companyData.ticker;
@@ -16,10 +15,8 @@ const seedDatabase = async (dataSource: DataSource) => {
     securityCompany.country = companyData.country;
     securityCompany.trend = companyData.trend;
 
-    // Guardar la compañía primero
     await companyRepository.save(securityCompany);
 
-    // Crear y guardar los precios asociados
     for (const priceData of companyData.prices) {
       const price = new Price();
       price.date = priceData.date;
@@ -38,7 +35,6 @@ const clearDatabase = async (dataSource: DataSource) => {
   const companyRepository = dataSource.getRepository(SecurityCompany);
   const priceRepository = dataSource.getRepository(Price);
 
-  // Vaciar las tablas
   await priceRepository.clear();
   await companyRepository.clear();
 

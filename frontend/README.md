@@ -18,8 +18,8 @@ To get started with the application, follow these steps:
 1. **Clone the repository**:
 
    ```bash
-   git clone <repository-url>
-   cd <repository-directory>
+   git https://github.com/weichner/engineai_project
+   cd frontend
    ```
 
 2. **Install dependencies**:
@@ -30,26 +30,16 @@ To get started with the application, follow these steps:
 
 3. **Start the development server**:
    ```bash
-   npm start
+   npm run start
    ```
 
-## Project Structure
+### Interacting with the Application
 
-The project structure is organized as follows:
-src/ ├── components/ # Reusable UI components ├── contexts/ # Context providers for state management ├── hooks/ # Custom hooks ├── pages/ # Page components ├── services/ # API service functions ├── styles/ # Global styles and themes ├── App.tsx # Main application component ├── index.tsx # Entry point of the application └── ... # Other configuration files
+After launching the application, you will see a **Security List** table displaying information about various security companies, including their symbol, name, sector, country, and trend.
 
-## Usage
+#### Viewing Company Details
 
-### Running the Application
+- **Click on any company row** to view more detailed information.
+- Upon selecting a company, a **chart** showing its **price and volume data** will be displayed, allowing you to analyze trends over time.
 
-To run the application in development mode, use:
-
-```bash
-npm start
-```
-
-## Contact
-
-For any questions or inquiries, please contact [your-email@example.com].
-
-This README provides a comprehensive overview of the front-end application, including its features, installation instructions, project structure, usage, and contribution guidelines.
+This feature provides a quick and interactive way to explore financial data for each security in the list.

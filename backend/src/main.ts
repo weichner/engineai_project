@@ -7,7 +7,7 @@ async function bootstrap() {
   app.enableCors({
     origin: 'http://localhost:3000',
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE,OPTIONS',
-    credentials: true, // Si necesitas enviar cookies u otros credenciales
+    credentials: true,
   });
   await app.listen(3001);
 }

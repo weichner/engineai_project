@@ -65,7 +65,6 @@ const SecurityDetail: React.FC = () => {
         name: 'Volume',
         data: security.prices.map((price: SecurityPrice) => price.volume),
         yAxis: 1,
-        //type: "column",
         color: '#FF404E',
       },
     ],

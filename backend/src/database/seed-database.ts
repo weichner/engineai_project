@@ -9,7 +9,7 @@ const run = async () => {
     console.log('Database seeded successfully!');
   } catch (error) {
     console.error('Error during seeding database:', error);
-    await dataSource.destroy(); // Asegura que la conexión se cierra en caso de error
+    await dataSource.destroy();
   }
 };
 
